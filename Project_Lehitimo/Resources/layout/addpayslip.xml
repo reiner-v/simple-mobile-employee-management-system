@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20px"
+    android:background="#000000">
+
+    <TextView
+        android:text="PREVIOUS PAYSLIP"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"/>
+
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1" 
+        android:rowCount="8"
+        android:columnCount="2"
+        android:layout_marginBottom="10dp">
+    
+        <TextView
+            android:text="Payslip ID:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:gravity="right"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xpayidtxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <TextView
+            android:text="Employee ID:"
+            android:layout_width="110.5dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:gravity="right"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xempidtxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <TextView
+            android:text="Month:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView4"
+            android:gravity="right"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <Spinner
+            android:id="@+id/xmonthspin"
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11.0dp"
+            android:backgroundTint="@color/colorWhite"
+            android:popupBackground="@android:color/black"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+        <TextView
+            android:text="Working Days:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView5"
+            android:gravity="right"
+            android:layout_row="3"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xwdaystx"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:hint="Only digit(0-9)"
+            android:inputType="text"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:text="Salary:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView6"
+            android:gravity="right"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xsalarytxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="4"
+            android:layout_column="1"/>
+        
+        <TextView
+            android:text="Total Earnings:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView7"
+            android:gravity="right"
+            android:layout_row="5"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xtearningtxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="5"
+            android:layout_column="1"/>
+
+        <TextView
+            android:text="Total Deductions:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView8"
+            android:gravity="right"
+            android:layout_row="6"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdeductiontxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="6"
+            android:layout_column="1"/>
+
+        <TextView
+            android:text="Net Pay:"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView9"
+            android:gravity="right"
+            android:layout_row="7"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="230.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xnpaytxt"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@android:color/white"
+            android:enabled="false"
+            android:inputType="text"
+            android:layout_row="7"
+            android:layout_column="1"/>
+
+    </GridLayout>
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xconfirmbtn" 
+        android:backgroundTint="#007042"/>
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#007042"
+        android:id="@+id/xbackbtn" />
+
+</LinearLayout>

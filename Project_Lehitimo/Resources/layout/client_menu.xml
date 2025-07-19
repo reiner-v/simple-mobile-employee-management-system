@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:text="MENU"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" 
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <Button
+        android:text="PROFILE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="100px"
+        android:id="@+id/xprofilebtn"
+        android:backgroundTint="#007042"/>
+    <Button
+        android:text="VIEW PAYSLIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="100px"
+        android:id="@+id/xvpayslipbtn"
+        android:backgroundTint="#007042"/>
+
+    <Button
+        android:text="CHANGE PASSWORD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="100px"
+        android:id="@+id/xcpasswordbtn"
+        android:backgroundTint="#007042"/>
+    <Button
+        android:text="LOGOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="100px"
+        android:id="@+id/xlogoutbtn"
+        android:backgroundTint="#007042"/>
+</LinearLayout>
